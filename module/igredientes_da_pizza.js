@@ -1,5 +1,6 @@
-var usuarios = [
-    {
+var usuarios = {
+    user: [
+        {
         id:1,
         nome:'Eduardo Vilas Boas de Barros',
         email:'forister@gmail.com',
@@ -80,47 +81,25 @@ var usuarios = [
                 bairro:'Barroso',
                 logradouro:'Rua Antônio Carvalho',
                 numero:'982'
-            }
-        ]
-    }
-]
+                }
+            ]
+        }
+    ]
+}
 
-var categoria = [
-    {
-        id:1,
-        nome:"Pizzas Doces"
-    },
+var produtos = {
+    
+    categoria: [
 
-    {
-        id:2,
-        nome:"Pizzas Salgadas"
-    },
-
-    {
-        id:3,
-        nome:"Bebidas"
-    },
-
-    {
-        id:4,
-        nome:'Sobremesas'
-    },
-]
-
-var produtos = [
     {
         id:1,
         nome:'Pizza de calabresa',
         descricao:'Pizza de calabresa normal',
         preco:13,
         avaliacao:4,
-        categorias:[
-            categoria[2]
-        ],
         comentarios:[
             {
                 id:2,
-                usuario: usuarios[0],
                 comentario:'Pizza muito boa.',
                 avaliacao:5
             }
@@ -133,13 +112,9 @@ var produtos = [
         descricao:'Pizza de Pepperoni com pepperoni da Itália',
         preco:25,
         avaliacao:5,
-        categorias:[
-            categoria[2]
-        ],
         comentarios:[
             {
                 id:5,
-                usuario: usuarios[3],
                 comentario:'Pizza incrível, mas um pouco cara.',
                 avaliacao:5
             }
@@ -152,13 +127,9 @@ var produtos = [
         descricao:'Pizza de Chocolate com chantili e morango',
         preco:20,
         avaliacao:5,
-        categorias:[
-            categoria[1]
-        ],
         comentarios:[
             {
                 id:3,
-                usuario: usuarios[1],
                 comentario:'Melhor pizza que já provei.',
                 avaliacao:5
             }
@@ -171,9 +142,6 @@ var produtos = [
         descricao:'Garrafa de 3 litros de Coca-Cola',
         preco:9.99,
         avaliacao:5,
-        categorias:[
-            categoria[3]
-        ],
     },
 
     {
@@ -182,9 +150,6 @@ var produtos = [
         descricao:'Garrafa de 3 litros de Pepsi',
         preco:9.9,
         avaliacao:5,
-        categorias:[
-            categoria[3]
-        ],
     },
 
     {
@@ -193,13 +158,9 @@ var produtos = [
         descricao:'Pizza de chocolate com borda recheada de chocolate',
         preco:15,
         avaliacao:4,
-        categorias:[
-            categoria[1]
-        ],
         comentarios:[
             {
                 id:1,
-                usuario: usuarios[1],
                 comentario:'Pizza gostosa, mas a borda veio com pouco chocolate.',
                 avaliacao:4
             }
@@ -212,18 +173,15 @@ var produtos = [
         descricao:'Cookie de caneca com calda de chocolate e pedaços de bolacha oreo',
         preco:10,
         avaliacao:5,
-        categorias:[
-            categoria[4]
-        ],
         comentarios:[
             {
                 id:4,
-                usuario: usuarios[2],
                 comentario:'Cookie muito bom, com certeza vale muito pelo preço.',
                 avaliacao:5
-            }
-        ]
-    },
-]
+                }
+            ]
+        },
+    ]
+}
 
-module.exports = {categoria, produtos, usuarios}
+module.exports = {produtos, usuarios}
